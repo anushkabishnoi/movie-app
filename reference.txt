@@ -1,0 +1,6 @@
+1. .env file: VITE_APP part is compulsary, after that, i can name my variable anything
+2. import in src/utils/api.js is import.meta.env.VITE_APP, so this import is slightly different from react imports,
+since vite imports are different from react imports
+3. strictmode in main.jsx (src) calls all useefeects/apis twice to see if same response given or not
+if response different both times, it thiks wrong code written, 
+so in this app, we remove strictmode
