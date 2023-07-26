@@ -23,8 +23,8 @@ const Header = () => {
   }, [location]);
 
   const controlNavbar = () => {
-    console.log("scrollY " + window.scrollY);
-    console.log("lastscrollY👑 " + lastScrollY);
+    // console.log("scrollY " + window.scrollY);
+    // console.log("lastscrollY👑 " + lastScrollY);
     if (window.scrollY > 200) {
       if (window.scrollY > lastScrollY && !mobileMenu) {
         setShow("hide");
