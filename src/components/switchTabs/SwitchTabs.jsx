@@ -1,5 +1,6 @@
-import "./style.scss";
 import { useState } from "react";
+
+import "./style.scss";
 
 const SwitchTabs = ({ data, onTabChange }) => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -19,12 +20,13 @@ const SwitchTabs = ({ data, onTabChange }) => {
         {data.map((tab, index) => (
           <span
             key={index}
-            className={`tabItem ${selectedTab === index?"active":""}`}
+            className={`tabItem ${selectedTab === index ? "active" : ""}`}
             onClick={() => activeTab(tab, index)}
           >
             {tab}
           </span>
         ))}
+        <span className="movingBg" style={{ left }} />
       </div>
     </div>
   );
