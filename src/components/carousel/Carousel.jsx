@@ -49,6 +49,7 @@ const Carousel = ({ data, loading }) => {
         {!loading ? (
           <div className="carouselItems">
             {data?.map((item) => {
+                
               const posterUrl = item.poster_path
                 ? url.poster + item.poster_path
                 : PosterFallback;
